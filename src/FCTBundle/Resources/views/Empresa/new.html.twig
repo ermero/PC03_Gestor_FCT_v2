@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+{% block title %}Empresa FCT{% endblock %}
+{% block body %}
+<img src="{{asset("images/fct.gif")}}">
+{% block stylesheets %}
+<link href="{{ asset('/css/new.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{{form(form)}}
+
+{% endblock %}
