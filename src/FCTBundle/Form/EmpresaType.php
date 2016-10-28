@@ -21,14 +21,14 @@ class EmpresaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nombre')
-            ->add('direccion')
-            ->add('cp')
-            ->add('telefono1')
-            ->add('telefono2')
-            ->add('fechaCreacion', DateType::class)
-            ->add('Guardar',SubmitType::class)
-            ->add('Borrar',ResetType::class)
+            ->add('nombre',TextType::class,array('label'=>'Nombre de la empresa','label_attr'=>array('class'=>'nombre'),'attr'=>array('class'=>'fondo')))
+            ->add('direccion',TextType::class,array('label'=>'Dirección de la empresa','label_attr'=>array('class'=>'nombre'),'attr'=>array('class'=>'fondo')))
+            ->add('cp',TextType::class,array('label'=>'CP','label_attr'=>array('class'=>'nombre'),'attr'=>array('class'=>'fondo')))
+            ->add('telefono1',TextType::class,array('label'=>'Telefono1','label_attr'=>array('class'=>'nombre'),'attr'=>array('class'=>'fondo')))
+            ->add('telefono2',TextType::class,array('label'=>'Telefono2','label_attr'=>array('class'=>'nombre'),'attr'=>array('class'=>'fondo')))
+            ->add('fechaCreacion', DateType::class,array('label'=>'Fecha de Creación'))
+            ->add('Guardar',SubmitType::class,array('label'=>'Guardar','attr'=>array('class'=>'fondoBtn')))
+            ->add('Borrar',ResetType::class,array('label'=>'Borrar','attr'=>array('class'=>'fondoBtn')))
         ;
     }
     

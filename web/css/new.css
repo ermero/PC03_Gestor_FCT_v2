@@ -4,6 +4,20 @@ body{
 img{
 	width: 100px;
 }
-#etiqueta{
-	 font-weight:bold;
+
+.nombre{
+	color:green;
+	font-weight: bold;
+}
+.creacion{
+	font-weight: bold;
+}
+.fondo{
+	background-color: #5ABDCE;
+	color:white;
+	font-weight:bold;
+}
+.fondoBtn{
+	background-color:#426BBD;
+	color:white;
 }
